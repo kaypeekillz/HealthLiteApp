@@ -1,0 +1,49 @@
+<div>
+    <div class="sidebar_item">
+        <img src="../../assets/images/logo.png" alt="App Logo">
+        <p class="health_text nunito">Health Lite</p>
+    </div>
+    <!-- <button (click)="toggleSidebar()">Close</button> -->
+    <div class="menu">
+        <div class="sidebar_item nav_hover">
+            <img src="../../assets/images/dashboard.png" alt="Dashboard">
+            <a routerLink="/" (click)="toggleSidebar()" class="item inter">Dashboard</a>
+        </div>
+
+        <div class="sidebar_item nav_hover">
+            <img src="../../assets/images/waiting.png" alt="Waiting">
+            <a class="item inter">Waiting Room</a>
+        </div>
+
+        <div class="sidebar_item nav_hover">
+            <img src="../../assets/images/schedule.png" alt="Schedule">
+            <a routerLink="/schedule" (click)="toggleSidebar()" class="item inter">Schedule</a>
+        </div>
+
+        <div class="sidebar_item nav_hover">
+            <img src="../../assets/images/patient.png" alt="Patient">
+            <a class="item inter">&nbsp; My Patients</a>
+        </div>
+
+        <div class="sidebar_item nav_hover">
+            <img src="../../assets/images/note.png" alt="Note">
+            <a class="item inter">&nbsp; Notes</a>
+        </div>
+
+        <div class="sidebar_item nav_hover">
+            <img src="../../assets/images/chat.png" alt="Chat">
+            <a class="item inter">&nbsp; Chats</a>
+        </div>
+
+        <div class="bottom_nav">
+            <div class="sidebar_item nav_hover">
+                <img src="../../assets/images/profile.png" id="resize_img" alt="Profile">
+                <a class="item inter">My Profile</a>
+            </div>
+            <div class="sidebar_item nav_hover">
+                <img src="../../assets/images/settings.png" alt="Settings">
+                <a class="item inter">&nbsp; Settings</a>
+            </div>
+        </div>
+    </div>
+</div>

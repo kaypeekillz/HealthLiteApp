@@ -1,0 +1,71 @@
+.menu {
+    margin-top: 2em;
+    display: block;
+    position: relative;
+    min-height: 70vh;
+    width: 100%;
+}
+
+.menu li {
+    margin-bottom: 15px;
+}
+
+.menu li a {
+    display: block;
+    width: 100%;
+}
+
+.sidebar_item {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    padding-left: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.health_text {
+    padding-left: 15px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    margin: 0px;
+    padding-top: 5px;
+}
+
+.item {
+    padding-left: 20px;
+    margin-top: 3px;
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.nav_hover {
+    cursor: pointer;
+}
+
+.nav_hover:hover {
+    background-color: #1D2B4F;
+    border-left: 2px solid white;
+}
+
+.bottom_nav {
+    position: absolute;
+    bottom: 0px;
+    width: 100% !important;
+}
+
+#resize_img {
+    width: 25px;
+    height: 25px;
+}

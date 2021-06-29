@@ -1,1 +1,60 @@
-<p>schedule works!</p>
+<div style="min-height: 100vh; background-color: #F5F8FA;">
+    <app-topnav></app-topnav>
+    <div style="padding: 20px;">
+        <div class="notification_section row">
+            <div class="p-4 col-md-9 col-lg-9 col-sm-9 col-xs-9">
+                <div>
+                    <p class="interbold sch"><strong>Your Schedule</strong></p>
+                </div>
+                <div>
+                    <p class="notification">
+                        All client consultations are available here. You can initiate <br> consultations
+                        for each client's procedure.
+                    </p>
+                </div>
+                <div>
+                    <button class="button_style"><i class="fa fa-eye"></i> Add new schedule</button>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
+                <img src="../../assets/images/pana.png" class="character" alt="character">
+            </div>
+        </div>
+        <!-- SECOND SECTION -->
+        <div class="row mt-3 mx-n2">
+            <div class="px-2 col-md-3 col-sm-3 col-lg-3 col-xs-12 p-0">
+                <app-calender></app-calender>
+                <app-recentactivity></app-recentactivity>
+            </div>
+            <div class="px-2 card apt_sec col-md-9 col-sm-9 col-lg-9 col-xs-12">
+                <div style="margin-left: 10px; margin-right: 10px;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p class="inter"><span class="date interbold">Thursday - 18th febuary,</span>2021</p>
+                        <div>
+                            <p class="inter">
+                                <span class="inter" style="color: #8692A6; font-size: 14px;" >Show by</span>
+                                <span class="interbold" style="color: #1565D8; font-size: 14px;"> Day
+                                    <i class="fa fa-chevron-down" aria-hidden="true"> </i>
+                                </span>
+                            </p> 
+                        </div>
+                    </div>
+                    <p class="line"></p>
+                    <div class="notification_images">
+                        <img src="../../assets/images/profile.png" alt="character" style="position: absolute;">
+                        <img src="../../assets/images/face.png" alt="character" style="position: absolute; left: 10px;">
+                        <img src="../../assets/images/profile.png" alt="character" style="position: absolute; left: 30px;">
+                        <img src="../../assets/images/face.png" alt="character" style="position: absolute; left: 50px;">
+
+                        <p class="inter message">You have {{ patients.length }} appointments scheduled</p>
+                    </div>
+                    <hr color="#f5f5f5">
+                </div>
+                <span *ngFor="let it of patients">
+                    <app-patient [patient]="it"></app-patient>
+                </span>
+            </div>
+        </div>
+
+    </div>
+</div>

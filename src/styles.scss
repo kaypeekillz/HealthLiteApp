@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Nunito;
+    src: url(./assets/fonts/Nunito-ExtraBold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(./assets/fonts/Inter-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: InterBold;
+    src: url(./assets/fonts/Inter-Bold.ttf) format("truetype");
+}
+
+.nunito {
+    font-family: Nunito;
+}
+
+.inter {
+    font-family: Inter;
+    letter-spacing: 1px;
+}
+
+.interbold {
+    font-family: InterBold;
+    letter-spacing: 1px;
+}
+
+.button_style {
+    background-color: #437dcf;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    font-family: Inter;
+}
+
+@import '~@fullcalendar/core/main.css';
+@import '~@fullcalendar/daygrid/main.css';

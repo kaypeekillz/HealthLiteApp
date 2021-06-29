@@ -1,16 +1,10 @@
 <ng-sidebar-container>
     <ng-sidebar mode="push" [opened]="opened">
-        <p>Sidebar</p>
-        <button (click)="toggleSidebar()">Close</button>
-        <ul class="menu">
-        <li><a routerLink="/" (click)="toggleSidebar()">Dashboard</a></li>
-        <li><a routerLink="/schedule" (click)="toggleSidebar()">Schedule</a></li>
-        </ul>
+        <app-sidebar></app-sidebar>
     </ng-sidebar>
     <div ng-sidebar-content>
-        <button (click)="toggleSidebar()">Open Sidebar</button>
+        <!-- <button (click)="toggleSidebar()">Open Sidebar</button> -->
         <router-outlet></router-outlet>
     </div>
-    
 </ng-sidebar-container>
   

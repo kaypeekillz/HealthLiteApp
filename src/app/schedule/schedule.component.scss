@@ -1,0 +1,123 @@
+.notification_section {
+    background-color: #216cd4;
+    border-radius: 10px;
+    height: 200px;
+ img {
+     height: 190px;
+ }
+}
+
+.line {
+    border: 2px solid #1565D8;
+    width: 50px;
+}
+
+.notification_images {
+    position: relative;
+    padding-top: 0px !important;
+    padding-bottom: 30px !important;
+    img {
+        width: 20px;
+        position: absolute;
+    }
+
+    p {
+        font-size: 13px !important;
+        color: #8692A6;
+        position: absolute;
+        left: 90px;
+    }
+}
+
+.date {
+    color: #1D2B4F;
+    // font-style: bold;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.sch {
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.notification {
+    color: white;
+    letter-spacing: 1px;
+}
+
+.apt_sec {
+    border: none;
+    box-shadow: none;
+    padding: 20px;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    // .main {
+    //     font-size: 10px !important;
+    // }
+    .notification {
+        font-size: 10px;
+    }
+    .notification_section {
+        height: 130px !important;
+        .sch {
+            font-size: 10px !important;
+        }
+        button {
+            margin-top: 10px;
+            padding: 5px !important;
+            font-size: 8px;
+        }
+        .p-4 {
+            padding: 10px !important;
+        }
+        img {
+            top: 12%;
+            position: absolute;
+            right: 3%;
+            height: 120px !important;
+        }
+        .notification {
+            width: 230px;
+            margin-bottom: 0px !important;
+        }
+    }
+} 
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    // .notification_section {
+    //     padding: 5px !important;
+    //     height: 210px !important;
+    //     font-size: 15px !important;
+        img {
+            // height: 180px !important;
+            right: 2%;
+            position: absolute;
+            // bottom: 1%;
+        }
+        // button {
+        //     padding: 5px;
+        //     font-size: 12px;
+        // }
+    // }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+    // .notification_section {
+    //     font-size: 15px !important;
+    //     height: 190px !important;
+        img {
+            // height: 180px !important;
+            right: 2%;
+            position: absolute;
+            // top: 7%;
+        }
+        // .p-4 {
+        //     padding: 10px !important;
+        // }
+    // }
+}

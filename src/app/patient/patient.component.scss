@@ -1,0 +1,36 @@
+.img_name {
+    display: flex; justify-content: 
+    space-between; 
+    width: 100%;
+    background-color: rgba(134, 146, 166, 0.05);
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    margin-left: 10px;
+}
+
+p {
+    white-space: nowrap;
+}
+
+.img_name p {
+    color: #8692A6 !important;
+    margin: 5px 0px 0px 10px;
+    font-size: 16px;
+}
+
+.time {
+    color: #1D2B4F;
+    font-weight: 400;
+    size: normal;
+    font-size: 13px;
+}
+
+.main {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.inner {
+    display: flex;
+}
