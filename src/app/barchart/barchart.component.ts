@@ -21,7 +21,7 @@ export class BarchartComponent implements OnInit {
           labels: ['Jan', 'Feb', 'Mar', 'Apr', "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
           datasets: [{
               label: 'Apointments',
-              data: [12, 19, 3, 5, 45, 7, 23, 4, 22, 12, 35, 17],
+              data: [12, 19, 3, 5, 45, 7, 23, 4, 22, 12, 30, 17],
               backgroundColor: [
                 'rgb(32, 203, 133)',
                   'rgb(90, 94, 237)',
@@ -56,8 +56,11 @@ export class BarchartComponent implements OnInit {
       options: {
           scales: {
               y: {
-                  beginAtZero: true
-              }
+                  beginAtZero: true,
+              },
+              xAxes: [{
+                barPercentage: 0.2
+            }]
           },
           legend: {
               position: 'right',
