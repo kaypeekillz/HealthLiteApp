@@ -1,7 +1,7 @@
 .img_name {
-    display: flex; justify-content: 
-    space-between; 
-    width: 100%;
+    display: flex; 
+    justify-content: space-between; 
+    width: 100% !important;
     background-color: rgba(134, 146, 166, 0.05);
     border-radius: 10px;
     padding: 10px 20px 10px 20px;
@@ -33,4 +33,18 @@ p {
 
 .inner {
     display: flex;
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    .inner p {
+        font-size: 10px;
+    }
+
+    .img_name {
+        padding: 5px;
+    }
+
+    .time {
+        font-size: 10px;
+    }
 }

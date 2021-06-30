@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
+  opened: boolean = false;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  toggleSidebar() {
+    this.opened = !this.opened;
+  }
 }

@@ -14,6 +14,9 @@ import { FullCalendarModule } from '@fullcalendar/angular';
 import { CalenderComponent } from './calender/calender.component';
 import { RecentactivityComponent } from './recentactivity/recentactivity.component';
 import { PatientComponent } from './patient/patient.component';
+import { PiechartComponent } from './piechart/piechart.component';
+import { BarchartComponent } from './barchart/barchart.component';
+// import * as ApexCharts from 'apexcharts';
 
 @NgModule({
   declarations: [
@@ -25,9 +28,12 @@ import { PatientComponent } from './patient/patient.component';
     TopnavComponent,
     CalenderComponent,
     RecentactivityComponent,
-    PatientComponent
+    PatientComponent,
+    PiechartComponent,
+    BarchartComponent
   ],
   imports: [
+    // ApexCharts,
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,

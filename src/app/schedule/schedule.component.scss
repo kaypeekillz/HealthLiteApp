@@ -7,6 +7,26 @@
  }
 }
 
+.main {
+    height: 100vh; 
+    background-color: #F5F8FA; 
+    overflow: hidden;
+}
+
+.scrollable {
+    height: 62vh; 
+    overflow: auto;
+}
+
+.scrollable::-webkit-scrollbar {
+    display: none;
+  }
+
+.scrollable {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+
 .line {
     border: 2px solid #1565D8;
     width: 50px;
@@ -38,14 +58,14 @@
 
 .sch {
     font-size: 25px;
-    font-weight: 900;
+    // font-weight: 900;
     color: white;
-    letter-spacing: 1px;
+    // letter-spacing: 1px;
 }
 
 .notification {
     color: white;
-    letter-spacing: 1px;
+    // letter-spacing: 1px;
 }
 
 .apt_sec {
@@ -56,9 +76,22 @@
 
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
-    // .main {
-    //     font-size: 10px !important;
-    // }
+    .main {
+        height: auto;
+    }
+    .message {
+        font-size: 12px;
+    }
+    .date {
+        font-size: 14px;
+    }
+    .sh {
+        font-size: 10px;
+    }
+    .scrollable{
+        height: auto !important;
+        overflow-y: hidden !important;
+    }
     .notification {
         font-size: 10px;
     }
@@ -89,35 +122,35 @@
 } 
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    // .notification_section {
-    //     padding: 5px !important;
-    //     height: 210px !important;
-    //     font-size: 15px !important;
-        img {
-            // height: 180px !important;
-            right: 2%;
-            position: absolute;
-            // bottom: 1%;
-        }
-        // button {
-        //     padding: 5px;
-        //     font-size: 12px;
-        // }
-    // }
+    img {
+        // height: 180px !important;
+        right: 2%;
+        position: absolute;
+    }
+    .main {
+        // font-size: 10px !important;
+        height: auto;
+        // overflow: auto;
+    }
+    .scrollable{
+        // overflow: hidden;
+        height: auto;
+    }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1365px) {
-    // .notification_section {
-    //     font-size: 15px !important;
-    //     height: 190px !important;
-        img {
-            // height: 180px !important;
-            right: 2%;
-            position: absolute;
-            // top: 7%;
-        }
-        // .p-4 {
-        //     padding: 10px !important;
-        // }
-    // }
+    img {
+        // height: 180px !important;
+        right: 2%;
+        position: absolute;
+        // top: 7%;
+    }
+    .main {
+        // font-size: 10px !important;
+        height: auto;
+    }
+    .scrollable{
+        // overflow: hidden;
+        height: auto;
+    }
 }

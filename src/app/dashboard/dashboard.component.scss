@@ -1,7 +1,9 @@
 .main {
-    min-height: 100vh;
+    height: 100vh;
+    // background-color: red;
     background-color: #F5F8FA;
     width: 100%;
+    overflow: hidden;
 }
 
 .main_section {
@@ -18,18 +20,96 @@
    }
 }
 
+.first {
+    margin-left: -35px;
+    width: auto;
+}
+
+.third {
+    margin-right: -30px;
+    // width: auto;
+}
+
+.card_parent {
+    margin: 10px 0px 10px 0px;
+    display: flex; 
+    padding-left: 0px;
+    padding-right: 0px;
+    justify-content: space-around; 
+    width: 100%;
+}
+
+.child {
+    // width: auto;
+    width: 290px; 
+    box-shadow: none;
+    border: none;
+    padding: 40px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.notification {
+    width: 70%;
+}
+
+.scrollable_right {
+    padding-bottom: 0px !important;
+    height: 92vh; 
+    overflow: auto;
+    padding-left: 0px !important;
+}
+
+.scrollable_left {
+    height: 63vh; 
+    overflow: auto;
+}
+
+.scrollable_right::-webkit-scrollbar {
+    display: none;
+  }
+
+.scrollable_right {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+
+.scrollable_left::-webkit-scrollbar {
+    display: none;
+  }
+
+.scrollable_left {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+
+.left_col {
+    padding-top: 1.5em !important;
+    padding-right: 2em !important;
+}
+
+.right_col {
+    // padding-top: 1.5em !important;
+    padding-top: 0px !important;
+    margin-top: 25px;
+}
+
 .banner {
     background-color: #216cd4;
     border-radius: 10px;
     padding: 10px;
     height: 210px;
+    margin-bottom: 10px;
 }
 
 .apt_sec {
     border: none;
     box-shadow: none;
     padding: 20px;
-    margin-top: 10px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 5px;
 }
 
 .line {
@@ -40,7 +120,6 @@
 .to_display {
     display: flex !important;
     justify-content: space-between;
-    // flex-direction: row;
 }
 
 .arrow_text {
@@ -69,12 +148,6 @@
     color: #1D2B4F;
 }
 
-// .card_section {
-//     height: 220px;
-//     border-radius: 10px;
-//     box-shadow: none;
-// }
-
 .next_pa {
     color: #1D2B4F;
     font-size: 18px;
@@ -95,11 +168,6 @@
     text-align: left;
 
 }
-
-// .card {
-//     box-shadow: none;
-//     border: none;
-// }
 
 .desc {
     font-size: 16px;
@@ -132,19 +200,84 @@
     color: #8692A6;
 }
 
+.nx {
+    color: #1D2B4F;
+}
+
 @media screen and (min-width: 320px) and (max-width: 600px) {
+    .left_col {
+        padding: 0px !important;
+    }
+    .card_parent {
+        padding: 0px;
+    }
+    .child {
+        width: 100%;
+        height: auto;
+    }
+    .second {
+        margin: 10px 0px 10px 0px;
+    }
+    .first {
+        margin-right: -30px;
+    }
+    .third {
+        margin-left: -30px;
+    }
+    .in {
+        padding: 0px;
+    }
+    .nx {
+        font-size: 16px;
+    }
+    .banner {
+        margin: 0px; 
+        height: 150px;
+        button {
+            font-size: 10px;
+            padding: 3px;
+            margin-top: 0px;
+        }
+        img {
+            position: absolute;
+            top: 12%;
+            right: 3%;
+            height: 140px;
+        }
+        .notification {
+            width: 70%;
+        }
+        .name {
+            font-size: 14px;
+        }
+    }
+    .card_parent {
+        margin: 10px 0px 0px 0px;
+    }
+
+    .right_col {
+        padding-right: 0px !important;
+    }
+    .main_in {
+        padding: 25px !important;
+    }
+    .scrollable_right{
+        height: auto !important;
+        overflow-y: hidden !important;
+    }
+    .scrollable_left{
+        height: auto !important;
+        overflow-y: hidden !important;
+        margin: 0px !important;
+    }
     .main {
         font-size: 10px !important;
+        height: auto;
     }
     .notification_section {
         height: 145px !important;
         .name {
             font-size: 15px !important;
-        }
-        button {
-            margin-top: 10px;
-            padding: 5px !important;
-            font-size: 8px;
         }
         .p-4 {
             padding: 10px !important;
@@ -163,20 +296,58 @@
 } 
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .notification_section {
-        padding: 5px !important;
-        height: 210px !important;
-        font-size: 15px !important;
-        img {
-            height: 180px !important;
-            right: 34%;
-            position: absolute;
-            top: 11%;
-        }
-        button {
-            padding: 5px;
-            font-size: 12px;
-        }
+    .notification {
+        width: 100%;
+        margin: 0px;
+    }
+    button {
+        margin: 15px 0px 0px 0px;
+        padding: 5px;
+        font-size: 12px;
+    }
+    .banner {
+        height: 200px;
+    }
+    img {
+        height: 180px !important;
+        right: 28%;
+        position: absolute;
+        top: 8%;
+    }
+    .first {
+        width: 160px;
+        padding: 10px !important;
+        margin: 0px !important;
+        // width: 100%;
+    }
+
+    .second {
+        width: 160px;
+        padding: 10px !important;
+        // margin: 10px 0px 10px 0px !important;
+        // width: 100%;
+    }
+
+    .third {
+        width: 160px;
+        padding: 10px !important;
+        margin: 0px !important;
+        // width: 100%;
+    }
+
+    .to_display {
+        display: flex !important;
+        justify-content: space-between;
+    }
+
+    .card_parent {
+        margin: 0px;
+        padding: 0px;
+
+    }
+    
+    .date {
+        font-size: 10px !important;
     }
 }
 
@@ -193,5 +364,32 @@
         .p-4 {
             padding: 10px !important;
         }
+        button {
+            margin-top: 0px;
+        }
     }
+
+    .first {
+        width: 220px;
+        padding: 10px !important;
+    }
+
+    .second {
+        width: 220px;
+        padding: 10px !important;
+    }
+
+    .third {
+        width: 220px;
+        padding: 10px !important;
+    }
+    // .scrollable_right{
+    //     height: auto !important;
+    //     overflow-y: hidden !important;
+    // }
+    // .scrollable_left{
+    //     height: auto !important;
+    //     overflow-y: hidden !important;
+    //     margin: 0px !important;
+    // }
 }

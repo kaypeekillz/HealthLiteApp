@@ -1,0 +1,40 @@
+#divChart {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.apt_sec {
+    border: none;
+    box-shadow: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.line {
+    border: 2px solid #1565D8;
+    width: 50px;
+}
+
+.top {
+    margin-left: 10px; 
+    margin-right: 10px;
+}
+
+.date {
+    color: #1D2B4F; 
+    font-size: 16px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .date {
+        color: #1D2B4F; 
+        font-size: 10px;
+        margin: 0px;
+    }
+    .top {
+        margin: 0px;
+        padding: 5px;
+    }
+}

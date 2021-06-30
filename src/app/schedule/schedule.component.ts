@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Patient } from '../models/patient';
-import { PatientService } from '../services/patient.service';
+import { DoctorService } from '../services/doctor.service';
 
 @Component({
   selector: 'app-schedule',
@@ -9,18 +8,25 @@ import { PatientService } from '../services/patient.service';
 })
 export class ScheduleComponent implements OnInit {
   patients: any[];
+  id = "009";
+  today = "";
 
-  constructor(private patientService: PatientService) { }
+  constructor(private doctorService: DoctorService) { }
 
   ngOnInit() {
-    // this.getPatientslist();
+    this.getpatientsFromDoctor(this.id);
+    // this.getDate();
   }
 
-  getPatientslist() {
-    this.patientService.getPatients().subscribe(res => {
-      // this.patients = res;
-      // console.log(this.patients);
+  getpatientsFromDoctor(code: string) {
+    this.doctorService.getDoctor(code).subscribe(res => {
+      if (res._id === code) {
+        this.patients = res.patients;
+      }
+    }, (err) => {
+      console.log(err);
     });
   }
+
 
 }
